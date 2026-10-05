@@ -1,0 +1,28 @@
+== Mitigação de danos ===
+
+8. Medidas de mitigação
+O projeto deve terminar com recomendações, não somente com credenciais encontradas.
+FTP
+desabilitar FTP simples;
+usar SFTP ou FTPS;
+desabilitar login anônimo;
+limitar tentativas;
+aplicar bloqueio temporário;
+monitorar logs.
+SMB
+desabilitar SMBv1;
+restringir portas 139 e 445 por firewall;
+usar senhas fortes e MFA quando disponível;
+limitar privilégios;
+bloquear contas após tentativas excessivas;
+evitar reutilização de senhas.
+Aplicação web
+aplicar rate limiting;
+usar CAPTCHA adaptativo;
+bloquear ou atrasar tentativas repetidas;
+utilizar MFA;
+proteger contra CSRF;
+registrar IP, usuário e horário;
+não revelar se o usuário existe;
+armazenar senhas com hash forte e salt.
+
